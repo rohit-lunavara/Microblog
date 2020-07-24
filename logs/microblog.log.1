@@ -1,0 +1,97 @@
+2020-07-23 18:31:49,744 INFO: Microblog startup [in /Users/rohitlunavara/Work/Study/Python/Flask/Flask Web Development/microblog/app/__init__.py:54]
+2020-07-23 18:34:05,570 INFO: Microblog startup [in /Users/rohitlunavara/Work/Study/Python/Flask/Flask Web Development/microblog/app/__init__.py:54]
+2020-07-23 20:30:37,145 INFO: Microblog startup [in /Users/rohitlunavara/Work/Study/Python/Flask/Flask Web Development/microblog/app/__init__.py:54]
+2020-07-23 20:30:54,797 INFO: Microblog startup [in /Users/rohitlunavara/Work/Study/Python/Flask/Flask Web Development/microblog/app/__init__.py:54]
+2020-07-24 00:08:23,328 INFO: Microblog startup [in /Users/rohitlunavara/Work/Study/Python/Flask/Flask Web Development/microblog/app/__init__.py:54]
+2020-07-24 00:08:46,005 ERROR: Exception on /register [POST] [in /Users/rohitlunavara/Work/Study/Python/Flask/Flask Web Development/microblog/venv/lib/python3.8/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/Users/rohitlunavara/Work/Study/Python/Flask/Flask Web Development/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/rohitlunavara/Work/Study/Python/Flask/Flask Web Development/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/rohitlunavara/Work/Study/Python/Flask/Flask Web Development/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/rohitlunavara/Work/Study/Python/Flask/Flask Web Development/microblog/venv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/rohitlunavara/Work/Study/Python/Flask/Flask Web Development/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/rohitlunavara/Work/Study/Python/Flask/Flask Web Development/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/rohitlunavara/Work/Study/Python/Flask/Flask Web Development/microblog/app/routes.py", line 29, in register
+    if form.validate_on_submit() :
+  File "/Users/rohitlunavara/Work/Study/Python/Flask/Flask Web Development/microblog/venv/lib/python3.8/site-packages/flask_wtf/form.py", line 100, in validate_on_submit
+    return self.is_submitted() and self.validate()
+  File "/Users/rohitlunavara/Work/Study/Python/Flask/Flask Web Development/microblog/venv/lib/python3.8/site-packages/wtforms/form.py", line 318, in validate
+    return super(Form, self).validate(extra)
+  File "/Users/rohitlunavara/Work/Study/Python/Flask/Flask Web Development/microblog/venv/lib/python3.8/site-packages/wtforms/form.py", line 150, in validate
+    if not field.validate(self, extra):
+  File "/Users/rohitlunavara/Work/Study/Python/Flask/Flask Web Development/microblog/venv/lib/python3.8/site-packages/wtforms/fields/core.py", line 226, in validate
+    stop_validation = self._run_validation_chain(form, chain)
+  File "/Users/rohitlunavara/Work/Study/Python/Flask/Flask Web Development/microblog/venv/lib/python3.8/site-packages/wtforms/fields/core.py", line 246, in _run_validation_chain
+    validator(form, self)
+  File "/Users/rohitlunavara/Work/Study/Python/Flask/Flask Web Development/microblog/app/forms.py", line 20, in validate_username
+    user = User.query.filter_by(username = username.data).first()
+NameError: name 'User' is not defined
+2020-07-24 00:09:53,627 ERROR: Exception on /register [POST] [in /Users/rohitlunavara/Work/Study/Python/Flask/Flask Web Development/microblog/venv/lib/python3.8/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/Users/rohitlunavara/Work/Study/Python/Flask/Flask Web Development/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/rohitlunavara/Work/Study/Python/Flask/Flask Web Development/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/rohitlunavara/Work/Study/Python/Flask/Flask Web Development/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/rohitlunavara/Work/Study/Python/Flask/Flask Web Development/microblog/venv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/rohitlunavara/Work/Study/Python/Flask/Flask Web Development/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/rohitlunavara/Work/Study/Python/Flask/Flask Web Development/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/rohitlunavara/Work/Study/Python/Flask/Flask Web Development/microblog/app/routes.py", line 29, in register
+    if form.validate_on_submit() :
+  File "/Users/rohitlunavara/Work/Study/Python/Flask/Flask Web Development/microblog/venv/lib/python3.8/site-packages/flask_wtf/form.py", line 100, in validate_on_submit
+    return self.is_submitted() and self.validate()
+  File "/Users/rohitlunavara/Work/Study/Python/Flask/Flask Web Development/microblog/venv/lib/python3.8/site-packages/wtforms/form.py", line 318, in validate
+    return super(Form, self).validate(extra)
+  File "/Users/rohitlunavara/Work/Study/Python/Flask/Flask Web Development/microblog/venv/lib/python3.8/site-packages/wtforms/form.py", line 150, in validate
+    if not field.validate(self, extra):
+  File "/Users/rohitlunavara/Work/Study/Python/Flask/Flask Web Development/microblog/venv/lib/python3.8/site-packages/wtforms/fields/core.py", line 226, in validate
+    stop_validation = self._run_validation_chain(form, chain)
+  File "/Users/rohitlunavara/Work/Study/Python/Flask/Flask Web Development/microblog/venv/lib/python3.8/site-packages/wtforms/fields/core.py", line 246, in _run_validation_chain
+    validator(form, self)
+  File "/Users/rohitlunavara/Work/Study/Python/Flask/Flask Web Development/microblog/app/forms.py", line 20, in validate_username
+    def validate_username(self, username) :
+NameError: name 'User' is not defined
+2020-07-24 00:10:26,557 INFO: Microblog startup [in /Users/rohitlunavara/Work/Study/Python/Flask/Flask Web Development/microblog/app/__init__.py:54]
+2020-07-24 00:10:39,902 ERROR: Exception on /register [POST] [in /Users/rohitlunavara/Work/Study/Python/Flask/Flask Web Development/microblog/venv/lib/python3.8/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/Users/rohitlunavara/Work/Study/Python/Flask/Flask Web Development/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/rohitlunavara/Work/Study/Python/Flask/Flask Web Development/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/rohitlunavara/Work/Study/Python/Flask/Flask Web Development/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/rohitlunavara/Work/Study/Python/Flask/Flask Web Development/microblog/venv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/rohitlunavara/Work/Study/Python/Flask/Flask Web Development/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/rohitlunavara/Work/Study/Python/Flask/Flask Web Development/microblog/venv/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/rohitlunavara/Work/Study/Python/Flask/Flask Web Development/microblog/app/routes.py", line 29, in register
+    if form.validate_on_submit() :
+  File "/Users/rohitlunavara/Work/Study/Python/Flask/Flask Web Development/microblog/venv/lib/python3.8/site-packages/flask_wtf/form.py", line 100, in validate_on_submit
+    return self.is_submitted() and self.validate()
+  File "/Users/rohitlunavara/Work/Study/Python/Flask/Flask Web Development/microblog/venv/lib/python3.8/site-packages/wtforms/form.py", line 318, in validate
+    return super(Form, self).validate(extra)
+  File "/Users/rohitlunavara/Work/Study/Python/Flask/Flask Web Development/microblog/venv/lib/python3.8/site-packages/wtforms/form.py", line 150, in validate
+    if not field.validate(self, extra):
+  File "/Users/rohitlunavara/Work/Study/Python/Flask/Flask Web Development/microblog/venv/lib/python3.8/site-packages/wtforms/fields/core.py", line 226, in validate
+    stop_validation = self._run_validation_chain(form, chain)
+  File "/Users/rohitlunavara/Work/Study/Python/Flask/Flask Web Development/microblog/venv/lib/python3.8/site-packages/wtforms/fields/core.py", line 246, in _run_validation_chain
+    validator(form, self)
+  File "/Users/rohitlunavara/Work/Study/Python/Flask/Flask Web Development/microblog/app/forms.py", line 26, in validate_email
+    user = User.query.filter_by(email = email.data).first()
+NameError: name 'email' is not defined
+2020-07-24 00:11:18,176 INFO: Microblog startup [in /Users/rohitlunavara/Work/Study/Python/Flask/Flask Web Development/microblog/app/__init__.py:54]
+2020-07-24 00:12:37,147 INFO: Microblog startup [in /Users/rohitlunavara/Work/Study/Python/Flask/Flask Web Development/microblog/app/__init__.py:54]
+2020-07-24 01:27:53,137 INFO: Microblog startup [in /Users/rohitlunavara/Work/Study/Python/Flask/Flask Web Development/microblog/app/__init__.py:54]
+2020-07-24 17:20:25,746 INFO: Microblog startup [in /Users/rohitlunavara/Work/Study/Python/Flask/Flask Web Development/microblog/app/__init__.py:56]

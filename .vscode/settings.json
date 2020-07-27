@@ -3,5 +3,6 @@
         "--load-plugins",
         "pylint-flask",
         "pylint-flask-sqlalchemy"
-    ]
+    ],
+    "python.pythonPath": "venv/bin/python"
 }
